@@ -191,9 +191,17 @@ QuaternionSLERP/
 ## Build & Run
 
 ```bash
-git clone <https://github.com/aimenboughanmi/QuaternionSLERP>
+git clone https://github.com/aimenboughanmi/QuaternionSLERP
 cd QuaternionSLERP
-g++ main.cpp -o cube -lraylib -lm -ldl -lpthread -lGL -lX11
+cmake -S . -B build
+cmake --build build
+./build/main
+```
+
+### Optional: single-file compile (if Raylib + pkg-config are installed)
+
+```bash
+g++ src/main.cpp -Iinclude -o cube $(pkg-config --cflags --libs raylib)
 ./cube
 ```
 
