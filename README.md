@@ -38,7 +38,7 @@ A quaternion is a four-dimensional number used to represent 3D rotations. In thi
 We construct quaternions from an **axis-angle representation**, which is intuitive for 3D rotations:
 
 $$
-q = \left(\cos(\theta/2), \; \sin(\theta/2)\,\mathbf{u}\right)
+q = \left(\cos(\theta/2), \; \sin(\theta/2)\ \mathbf{u}\right)
 $$
 
 Where:
@@ -56,27 +56,19 @@ This representation avoids **gimbal lock** and provides a compact way to encode 
 
 1. **Normalization**  
 Ensures the quaternion represents a valid rotation:
-$$
-q_{\text{normalized}} = \frac{q}{\|q\|}
-$$
+$q_{\text{normalized}} = \frac{q}{\|q\|}$
 
 2. **Multiplication**  
 Combines rotations:
-$$
-q_{\text{result}} = q_1 \cdot q_2
-$$
+$q_{\text{result}} = q_1 \cdot q_2$
 
 3. **Inverse**  
 Represents the opposite rotation:
-$$
-q^{-1} = \frac{(w, -x, -y, -z)}{w^2 + x^2 + y^2 + z^2}
-$$
+$q^{-1} = \frac{(w, -x, -y, -z)}{w^2 + x^2 + y^2 + z^2}$
 
 4. **Rotate a vector**  
 A vector $\mathbf{v}$ is embedded as a pure quaternion $(0, \mathbf{v})$:
-$$
-\mathbf{v}_{\text{rotated}} = q \cdot (0, \mathbf{v}) \cdot q^{-1}
-$$
+$\mathbf{v}_{\text{rotated}} = q \cdot (0, \mathbf{v}) \cdot q^{-1}$
 
 ---
 
@@ -199,7 +191,7 @@ QuaternionSLERP/
 ## Build & Run
 
 ```bash
-git clone <repo_url>
+git clone <https://github.com/aimenboughanmi/QuaternionSLERP>
 cd QUATERNIONSLERP
 g++ main.cpp -o cube -lraylib -lm -ldl -lpthread -lGL -lX11
 ./cube
