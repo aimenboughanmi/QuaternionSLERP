@@ -101,7 +101,7 @@ Start and end orientations:
 
 This animation is generated using the interactive demo (`main.cpp`):
 
-<img src="./frames/cube_animation_rot.gif" width="400" alt="Cube SLERP interpolation">
+<img src="./frames/cube_animation_rot.gif" width="600" alt="Cube SLERP interpolation">
 
 
 ---
@@ -118,7 +118,7 @@ This demo rotates three cubes side-by-side using different interpolation methods
 This animation is generated using the interactive demo (`demo_interpolation.cpp`):
 
 
-<img src="./frames/cube_demo_interpol.gif" width="400" alt="LERP vs NLERP vs SLERP comparison">
+<img src="./frames/cube_demo_interpol.gif" width="800" alt="LERP vs NLERP vs SLERP comparison">
 
 
 ### Summary Table
