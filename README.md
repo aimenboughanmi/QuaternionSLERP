@@ -151,6 +151,7 @@ The project includes unit tests to validate the correctness of the mathematical 
 
 These tests ensure correctness and numerical consistency of the implemented math primitives.
 In addition to unit tests, visual validation is performed using interactive demos to analyze interpolation behavior.
+
 ---
 
 ## Practical Notes
@@ -158,7 +159,6 @@ In addition to unit tests, visual validation is performed using interactive demo
 In practice, different representations of rotations are used together. Quaternions are typically used for **storing and interpolating rotations**, while rotation matrices are used when **applying transformations to many vertices efficiently**.
 
 ---
-
 
 
 ## Project Structure
