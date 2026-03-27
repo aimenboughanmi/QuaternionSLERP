@@ -192,7 +192,7 @@ QuaternionSLERP/
 
 ```bash
 git clone <https://github.com/aimenboughanmi/QuaternionSLERP>
-cd QUATERNIONSLERP
+cd QuaternionSLERP
 g++ main.cpp -o cube -lraylib -lm -ldl -lpthread -lGL -lX11
 ./cube
 ```
